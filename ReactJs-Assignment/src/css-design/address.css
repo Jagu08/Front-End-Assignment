@@ -1,0 +1,26 @@
+.register-form {
+  background-color: white;
+  padding: 20px;
+  z-index: 999 !important;
+}
+.success {
+  background-color: rgb(220, 220, 250);
+  box-shadow: rgb(187, 134, 236) 0px 1px 2px 0px,
+    rgb(172, 128, 212) 0px 1px 3px 1px;
+    padding: 20px;
+    border: 2px solid purple;
+
+}
+.check i{
+  color: rgb(13, 82, 59);
+  font-size: 120px;
+  padding-left: 130px;
+}
+.success h2{
+  text-align: center;
+}
+.pastaddress{
+  box-shadow: rgb(187, 134, 236) 0px 1px 2px 0px,
+    rgb(172, 128, 212) 0px 1px 3px 1px;
+  
+}

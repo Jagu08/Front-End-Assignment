@@ -1,0 +1,14 @@
+form > p {
+  color: red;
+  text-align: center;
+}
+
+.form-control {
+  background-color: aliceblue;
+}
+.formdesign {
+  box-shadow: rgb(187, 134, 236) 0px 2px 3px 0px,
+    rgb(172, 128, 212) 0px 2px 3px 1px;
+  padding-bottom: 5px;
+  border: 2px solid purple;
+}
