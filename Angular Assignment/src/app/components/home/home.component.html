@@ -1,0 +1,33 @@
+
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+<ngb-panel id="static-1" title="Categories">
+  <ng-template ngbPanelContent>
+
+    <button mat-button (click)="filtrarData()" class="btn btn-outline-primary">All</button> 
+    <button mat-button (click)="filtrarElectronicsData()" class="btn btn-outline-primary">Electronics</button> 
+     <button mat-button (click)="filtrarCosmeticsData()" class="btn btn-outline-primary">Cosmetics</button>  
+     <button mat-button (click)="filtrarShoesData()" class="btn btn-outline-primary">Shoes</button>  
+     <button mat-button (click)="filtrarManClothesData()" class="btn btn-outline-primary">Man Clothes</button>  
+     <button mat-button (click)="filtrarWomensClothesData()" class="btn btn-outline-primary">Women Clothes</button>  
+  </ng-template>
+</ngb-panel>
+</ngb-accordion>
+
+
+
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of Products | async">
+    <div class="card col-md-3">
+        <h5>{{ item.name }}</h5>
+        <h5>{{ item.price }}</h5>
+        <p>{{ item.description }}</p> <br>
+        <img src="{{ item.imageURL }}" alt="" width="150" height="200" /><br>
+        <div class="d-flex">
+        <button class="btn btn-primary mx-2" (click)=addtocart(item)>Add to Cart</button>
+        <!-- <button class="btn btn-primary">View</button> -->
+        </div>
+      </div>
+    </ng-container>
+    </div>
+  </div>

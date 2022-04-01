@@ -18,7 +18,6 @@ function Home() {
   }, []);
 
   async function getdata() {
-    console.log('calling')
     try {
       setLoading(true);
       const users = await getDocs(collection(fireDB, "products"));
@@ -54,7 +53,8 @@ function Home() {
             value={filterType}
             onChange={(e) => {
               setFilterType(e.target.value);
-            }}>
+            }}
+          >
             <option value="">All</option>
             <option value="Electronics">Electronics</option>
             <option value="Women Clothes">Women Clothes</option>

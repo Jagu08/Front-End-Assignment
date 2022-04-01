@@ -1,0 +1,17 @@
+<mat-toolbar class="header">
+  <span routerLink="/">ShopNow</span>
+ 
+<span class="fas fa-search search-icon"></span>
+  <div class=" ms-auto">
+  <a routerLink="" mat-button>Home</a>
+  <a routerLink="register" *ngIf="!firebaseservice.loggedIn()" mat-button>Register</a>
+  <a routerLink="login" *ngIf="!firebaseservice.loggedIn()" mat-button>Login</a>
+  <a *ngIf="firebaseservice.loggedIn()" (click)="firebaseservice.logout()" mat-button>Logout</a>
+  <a routerLink="order" *ngIf="element == true" mat-button>Orders</a>
+  <a (click)="showData()" routerLink="cart">
+    <i style="font-size:30px"  class="bi bi-cart-plus carticon"></i>
+    <div style="font-size:10px" class="badge bg-danger">{{totalItem}}</div>
+</a>
+  </div>
+</mat-toolbar>
+

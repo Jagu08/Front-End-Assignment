@@ -1,0 +1,19 @@
+<div>
+    <div class="row">
+        <div
+          class="col-md-6 offset-md-3
+        align-center formdesign">
+    <h1 class="text-center">Register-Form</h1>
+    <form >
+    <input type="text" class="form-control" id="inputdefault" placeholder="Enter E-mail" name="email" [(ngModel)]="email" />
+    
+    <input type="password" class="form-control" id="inputdefault" placeholder="Enter Password" name="password"  [(ngModel)]="password" />
+    
+    <!-- <input type="password" placeholder="Confirm Password" name="confirmpassword" formControlName="confirmpassword" [(ngModel)]="confirmpassword"> -->
+    
+    <button mat-raised-button color="warn" (click)="signup()">Sign up</button>
+    <div class="margin-top20">
+        Already have account  <a href="/login" class="text-decoration-none">Login</a>
+    </div>
+    </form>
+    </div>

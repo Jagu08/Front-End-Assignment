@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="order-table">
+      <div class="order-product">
+<table class="table table-responsive">
+    <thead>
+      orders-list
+    </thead>
+    <tbody>
+      <div *ngFor="let item of orders">
+        <td>{{item.name}}</td>
+        <td><img src="{{ item.imageURL }}" alt="" width="150" height="200" ></td>
+        <td>{{item.price}}</td>
+        <td>{{item.description}}</td>
+    </div>
+    </tbody>
+  </table>

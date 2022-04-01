@@ -1,0 +1,13 @@
+.form-control {
+    background-color: aliceblue;
+  }
+  .formdesign {
+    box-shadow: rgb(176, 235, 243) 0px 2px 3px 0px,
+      rgb(171, 232, 240) 0px 2px 3px 1px;
+    padding-bottom: 5px;
+    border: 2px solid rgb(46, 128, 134);
+    margin-top: 40px;
+  }
+  #inputdefault {
+    margin-bottom: 20px;  
+  }
