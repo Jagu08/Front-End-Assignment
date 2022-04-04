@@ -47,15 +47,8 @@ export class CartComponent implements OnInit {
   emptycart(){
     this.cartservice.removeAllCart();
   }
-  addtoorder(item: any){
-    if(localStorage.getItem('user')==null){
-      alert("logout");
-     this.router.navigate(['./login'])
-    }
-    else{
-      this.orderservice.addtoOrder(item);
-    }
+  
 
   }
-}
+
 

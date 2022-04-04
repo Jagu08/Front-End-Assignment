@@ -23,7 +23,6 @@ import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
 import { FirebaseService } from './services/firebase.service';
 import {FirebaseTSApp} from 'firebasets/firebasetsApp/firebaseTSApp';
 import { CartComponent } from './components/cart/cart.component';
-import { OrderComponent } from './components/order/order.component';
 import { SuccessComponent } from './components/success/success.component';
 import { AddressComponent } from './components/address/address.component';
 
@@ -38,7 +37,6 @@ import { AddressComponent } from './components/address/address.component';
    
     HomeComponent,
         CartComponent,
-        OrderComponent,
         SuccessComponent,
         AddressComponent
   ],

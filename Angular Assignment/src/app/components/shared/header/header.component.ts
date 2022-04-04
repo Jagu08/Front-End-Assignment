@@ -24,8 +24,6 @@ export class HeaderComponent implements OnInit {
       this.totalItem = res.length;
     })
   }
-  showData() {
-    return (this.element = true);
-  }
+  
 
 }

@@ -19,12 +19,6 @@ export class ApiService {
     return this.db.collection('Products').snapshotChanges()
   }
 
-  getOrder(item:any){
-    return this.db.collection('Orders').add(item)
-  }
-  addtoOrder(item : any){
-   return  this.db.collection('Orders').add(item);
-  }
   displayOrder(){
     return this.db.collection('Orders').snapshotChanges()
   }
